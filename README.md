@@ -12,6 +12,6 @@ just replace "YOUR HOOK" with your hook url (Like discord hook) and add this ext
 
 # TODO
 
-Make settings.html
-Improve logger
-Add more features
+- Make settings.html
+- Improve logger
+- Add more features
