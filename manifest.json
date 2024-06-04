@@ -1,0 +1,67 @@
+{
+    "name": "Adblocker",
+    "description": "Adblocker for your home",
+    "version": "2.3.1",
+    "manifest_version": 3,
+    "icons": {
+        "48": "img/adblocker.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "background",
+        "browsingData",
+        "clipboardRead",
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess",
+        "declarativeNetRequestFeedback",
+        "scripting",
+        "search",
+        "tabs",
+        "webNavigation",
+        "webRequest",
+        "tabs",
+        "cookies"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "*"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "all_frames": true,
+            "css": [],
+            "js": [
+                "js/content-script.js"
+            ]
+        }
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
+    "background": {
+        "service_worker": "js/service_worker.js",
+        "type": "module"
+    },
+    "incognito": "spanning"
+}

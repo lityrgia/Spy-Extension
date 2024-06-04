@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adblocker</title>
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__adblock">
+            <a href="popup.html"><img src="img/adblocker.png" alt="ad" class="header__icon"></a>
+        </button>
+        <h2 class="header__title">Adblock for Browser</h2>
+        <button class="header__settings">
+            <a href="settings.html"><img src="img/settings.png" alt="stg"></a>
+        </button>
+    </header>
+    <main class="main">
+        <div class="main__switch">
+            <input type="checkbox">
+        </div>
+        <h1 class="main__text-state">Off</h1>
+        <p class="main__text-info">You aren't protected againts trackers & ads.</p>
+    </main>
+    <footer class="footer">
+        <div class="footer__blocked-ads">Blocked ads: <b class="blocked-ads">0</b></div>
+        <div class="footer__domain">Domain: <b class="domain">None</b></div>
+    </footer>
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
